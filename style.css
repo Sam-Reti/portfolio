@@ -1,3 +1,8 @@
+:root{
+    --color: rgb(22, 22, 22);
+}
+
+
 body{
     width: 100vw;
     height: 100vh;
@@ -6,7 +11,7 @@ body{
     overflow: hidden;
     margin: 0;
     padding: 0%;
-    background-color: rgb(26, 26, 26);
+    background-color: var(--color);
 }
 
 main{
@@ -40,7 +45,7 @@ main{
     transform: translatey(14%);
     font-size: clamp(2rem, 20vw, 20rem);
     font-weight: 800;
-    color: rgb(26, 26, 26);
+    color: var(--color);
     line-height: 1;
 }
 
