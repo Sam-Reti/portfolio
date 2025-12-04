@@ -55,37 +55,44 @@ main{
 }
 
 .card1, .card2 {
-   padding: 20px;
+    padding:   0px 20px ;
     border: 3px solid rgb(255, 255, 255);
     border-radius: 10px;
-    margin-right: 20px;
+    margin: 0 50px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    justify-content: center;
+   
    
 }
 
 
 .cardtitle{
     color: azure;
-    margin: 10px;
+    font-size: 3vw;
+    margin-top: 20px;
+}
+
+.demo, .github{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 40%;
+    text-align: center;
+    align-self: center;
+    margin-bottom:15px;
+    padding: 10px;
     
 }
 
-.demo{
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: white;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-}
 
-.github{
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 10px;
-
+.buttonrow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;       /* spacing between the buttons */
+    width: 100%;
 }
 
