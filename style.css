@@ -6,7 +6,7 @@ body{
     overflow: hidden;
     margin: 0;
     padding: 0%;
-    background-color: black;
+    background-color: rgb(26, 26, 26);
 }
 
 main{
@@ -25,10 +25,10 @@ main{
     transform: translatey(15%);
     font-size: clamp(2rem, 20vw, 20rem);
     font-weight: 800;
-    color: azure;
+    color: rgb(162, 162, 162);
     line-height: 1;
-   
-}
+  }
+
 
 .subtitle {
     position: fixed;
@@ -40,9 +40,8 @@ main{
     transform: translatey(14%);
     font-size: clamp(2rem, 20vw, 20rem);
     font-weight: 800;
-    color: rgb(0, 0, 0);
+    color: rgb(26, 26, 26);
     line-height: 1;
-   
 }
 
 
@@ -55,44 +54,64 @@ main{
 }
 
 .card1, .card2 {
-    padding:   0px 20px ;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    margin: 0 50px 0 50px;
+    padding:   50px 20px ;
+    border: 2px solid rgb(162, 162, 162);
+    border-radius: 300px;
+    margin: 50px;
     display: flex;
     flex-wrap: wrap;
-    width: 25%;
+    width: 250px;
     justify-content: center;
-   
-   
+    animation: roll 3s linear forwards;
 }
 
+@keyframes roll {
+    0% {
+        transform: translateX(-500%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0) rotate(720deg);
+    }
+}
 
 .cardtitle{
-    color: azure;
-    font-size: 3vw;
+    color:rgb(162, 162, 162);
+    font-size: 2rem;
     margin-top: 20px;
+    margin-bottom: 20px;
+   
 }
 
-.demo, .github{
+.github, .demo{
     font-size: 1.2rem;
     text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
+    color: rgb(162, 162, 162);
+    border: 2px solid rgb(162, 162, 162);
     width: 40%;
     text-align: center;
     align-self: center;
-    margin-bottom:15px;
-    padding: 10px;
-    
+    padding: 15px;
+    display: flex;
+    justify-content: center;  
+    width: 50%;
+    flex-wrap: wrap;
+    border-radius: 50px 50px;
 }
 
+.github:hover{
+    background-color: rgb(162, 162, 162) ;
+    color:rgb(26, 26, 26) ;
+}
+
+.demo:hover{
+    background-color: rgb(162, 162, 162) ;
+    color:rgb(26, 26, 26) ;
+}
 
 .buttonrow {
     display: flex;
-    justify-content: center;
-    gap: 10px;       /* spacing between the buttons */
+    justify-content: center;  
     width: 100%;
-}
+    flex-wrap: wrap;
 
+}
