@@ -1,0 +1,91 @@
+body{
+    width: 100vw;
+    height: 100vh;
+   /* background: linear-gradient(rgb(19, 249, 249),rgb(1, 174, 232));*/
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0%;
+    background-color: black;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
+
+.title {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;             
+    text-align: center;      
+    margin: 0;
+    transform: translatey(15%);
+    font-size: clamp(2rem, 20vw, 20rem);
+    font-weight: 800;
+    color: azure;
+    line-height: 1;
+   
+}
+
+.subtitle {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;             
+    text-align: center;   
+    left: -5px;   
+    margin: 0;
+    transform: translatey(14%);
+    font-size: clamp(2rem, 20vw, 20rem);
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+   
+}
+
+
+.projectcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
+.card1, .card2 {
+   padding: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-right: 20px;
+   
+}
+
+
+.cardtitle{
+    color: azure;
+    margin: 10px;
+    
+}
+
+.demo{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.github{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
