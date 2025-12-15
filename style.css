@@ -1,121 +1,118 @@
-:root{
-    --color: rgb(22, 22, 22);
+:root {
+  --color: rgb(22, 22, 22);
 }
 
-
-body{
-    width: 100vw;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-    margin: 0;
-    padding: 0%;
-    background-color: var(--color);
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  margin: 0;
+  padding: 0%;
+  background-color: var(--color);
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-   
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .title {
-    position: fixed;
-    bottom: 0%;
-    width: 100%;             
-    text-align: center;      
-    margin: 0;
-    transform: translatey(15%);
-    font-size: clamp(2rem, 20vw, 20rem);
-    font-weight: 800;
-    color: rgb(162, 162, 162);
-    line-height: 1;
-  }
-
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  transform: translatey(15%);
+  font-size: clamp(2rem, 20vw, 20rem);
+  font-weight: 800;
+  color: rgb(162, 162, 162);
+  line-height: 1;
+}
 
 .subtitle {
-    position: fixed;
-    bottom: 0%;
-    width: 100%;             
-    text-align: center;   
-    left: -5px;   
-    margin: 0;
-    transform: translatey(14%);
-    font-size: clamp(2rem, 20vw, 20rem);
-    font-weight: 800;
-    color: var(--color);
-    line-height: 1;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  left: -5px;
+  margin: 0;
+  transform: translatey(14%);
+  font-size: clamp(2rem, 20vw, 20rem);
+  font-weight: 800;
+  color: var(--color);
+  line-height: 1;
 }
 
-
-.projectcard{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10%;
-
+.projectcard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10%;
 }
 
-.card1, .card2, .card3 {
-    padding:   50px 20px ;
-    border: 2px solid rgb(162, 162, 162);
-    border-radius: 300px;
-    margin: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 250px;
-    justify-content: center;
-    animation: roll 3s linear forwards;
+.card1,
+.card2,
+.card3,
+.card4 {
+  padding: 50px 20px;
+  border: 2px solid rgb(162, 162, 162);
+  border-radius: 300px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  justify-content: center;
+  animation: roll 3s linear forwards;
 }
 
 @keyframes roll {
-    0% {
-        transform: translateX(-500%) rotate(0deg);
-    }
-    100% {
-        transform: translateX(0) rotate(720deg);
-    }
+  0% {
+    transform: translateX(-500%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) rotate(720deg);
+  }
 }
 
-.cardtitle{
-    color:rgb(162, 162, 162);
-    font-size: 2rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-   
+.cardtitle {
+  color: rgb(162, 162, 162);
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.github, .demo{
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: rgb(162, 162, 162);
-    border: 2px solid rgb(162, 162, 162);
-    width: 40%;
-    text-align: center;
-    align-self: center;
-    padding: 15px;
-    display: flex;
-    justify-content: center;  
-    width: 50%;
-    flex-wrap: wrap;
-    border-radius: 50px 50px;
+.github,
+.demo {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(162, 162, 162);
+  border: 2px solid rgb(162, 162, 162);
+  width: 40%;
+  text-align: center;
+  align-self: center;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-wrap: wrap;
+  border-radius: 50px 50px;
 }
 
-.github:hover{
-    background-color: rgb(162, 162, 162) ;
-    color:rgb(26, 26, 26) ;
+.github:hover {
+  background-color: rgb(162, 162, 162);
+  color: rgb(26, 26, 26);
 }
 
-.demo:hover{
-    background-color: rgb(162, 162, 162) ;
-    color:rgb(26, 26, 26) ;
+.demo:hover {
+  background-color: rgb(162, 162, 162);
+  color: rgb(26, 26, 26);
 }
 
 .buttonrow {
-    display: flex;
-    justify-content: center;  
-    width: 100%;
-    flex-wrap: wrap;
-
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
