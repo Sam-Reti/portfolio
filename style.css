@@ -64,7 +64,7 @@ main {
   flex-wrap: wrap;
   width: 250px;
   justify-content: center;
-  animation: roll 3s linear forwards;
+  animation: roll 3.5s linear forwards;
 }
 
 @keyframes roll {
