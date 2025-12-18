@@ -23,7 +23,7 @@ main {
   bottom: 0%;
   width: 100%;
   text-align: center;
-  margin: 0;
+  margin-top: 30px;
   transform: translatey(15%);
   font-size: clamp(2rem, 20vw, 20rem);
   font-weight: 800;
@@ -37,7 +37,7 @@ main {
   width: 100%;
   text-align: center;
   left: -5px;
-  margin: 0;
+  margin-top: 30px;
   transform: translatey(14%);
   font-size: clamp(2rem, 20vw, 20rem);
   font-weight: 800;
@@ -49,13 +49,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .card1,
 .card2,
 .card3,
-.card4 {
+.card4,
+.card5 {
   padding: 50px 20px;
   border: 2px solid rgb(162, 162, 162);
   border-radius: 300px;
