@@ -56,7 +56,9 @@ main {
 .card2,
 .card3,
 .card4,
-.card5 {
+.card5,
+.card6,
+.card7 {
   padding: 50px 20px;
   border: 2px solid rgb(162, 162, 162);
   border-radius: 300px;
