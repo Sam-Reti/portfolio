@@ -50,6 +50,9 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5%;
+  transform: scale(0.75);
+  position: relative;
+  bottom: 18vh;
 }
 
 .card1,
@@ -58,7 +61,9 @@ main {
 .card4,
 .card5,
 .card6,
-.card7 {
+.card7,
+.card8,
+.card9 {
   padding: 50px 20px;
   border: 2px solid rgb(162, 162, 162);
   border-radius: 300px;
@@ -118,4 +123,80 @@ main {
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+}
+
+/* ✅ MOBILE: turn balls into a scrollable list */
+@media (max-width: 1008px) {
+  body {
+    height: auto; /* allow content height */
+    overflow-y: auto; /* ✅ enable scroll */
+    overflow-x: hidden;
+  }
+
+  .projectcard {
+    bottom: 0; /* don't push it up */
+    transform: none; /* no scaling */
+    flex-direction: column; /* list layout */
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 12px;
+    padding: 16px;
+    padding-bottom: 26vh; /* ✅ space so list doesn’t hide behind title */
+    margin-top: 0;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8,
+  .card9 {
+    width: 100%; /* full width list row */
+    max-width: 520px; /* optional */
+    margin: 10px auto; /* centered */
+    border-radius: 18px; /* less “ball”, more card row */
+    padding: 18px 16px;
+    animation: none; /* ✅ stop rolling */
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cardtitle {
+    font-size: 1.4rem;
+    margin: 10px;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+  }
+
+  .buttonrow {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .github,
+  .demo {
+    width: auto;
+    flex: 1; /* buttons share row */
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Optional: users who prefer reduced motion (even on desktop) */
+@media (prefers-reduced-motion: reduce) {
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8,
+  .card9 {
+    animation: none !important;
+  }
 }
