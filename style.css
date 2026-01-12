@@ -64,7 +64,9 @@ main {
 .card7,
 .card8,
 .card9,
-.card10 {
+.card10,
+.card11,
+.card12 {
   padding: 50px 20px;
   border: 2px solid rgb(162, 162, 162);
   border-radius: 300px;
@@ -155,7 +157,9 @@ main {
   .card7,
   .card8,
   .card9,
-  .card10 {
+  .card10,
+  .card11,
+  .card12 {
     width: 100%; /* full width list row */
     max-width: 520px; /* optional */
     margin: 10px auto; /* centered */
@@ -198,7 +202,10 @@ main {
   .card6,
   .card7,
   .card8,
-  .card9 {
+  .card9,
+  .card10,
+  .card11,
+  .card12 {
     animation: none !important;
   }
 }
